@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #b8ffe166;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: hsl(161, 64%, 9%);
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: translate(0, -0.15rem);
+  color: hsl(161, 64%, 29%);
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav_links li {
+  color: #08251c;
+  padding: 0.5rem 1rem;
+  margin: 0 0.1rem;
+  font-weight: 500;
+  font-family: "Ubuntu", "sans-serif";
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.nav_links li:hover {
+  transform: translate(0, -0.15rem);
+  background-color: #6861611b;
+}
+.btn_container {
+  padding: 0 1rem;
+  display: flex;
+}
+.btn_container button {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0 0;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-family: "Ubuntu", "sans-serif";
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+.btn_container button:hover {
+  transform: translate(0, -0.15rem);
+}
+
+.btn_container button > * {
+  padding: 0 0.2rem;
+}
+.btn_follow {
+  color: #08251c;
+  background-color: #68616137;
+}
+.btn_try {
+  background-color: #08251c;
+  color: #fff;
+}
