@@ -1,0 +1,62 @@
+.main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #14151a;
+}
+.tab_btns {
+  display: flex;
+}
+.tab_btns p {
+  color: white;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.tab_btns p:hover {
+  background-color: hsla(0, 0%, 100%, 0.125);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.8);
+}
+p[data-val="true"] {
+  background-color: hsla(0, 0%, 100%, 0.125);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.8);
+}
+.tab_headers {
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+.tab_headers :first-child {
+  font-size: 1.5rem;
+}
+.tab_headers :nth-child(2) {
+  color: gray;
+}
+
+.tab_content {
+  height: 12rem;
+  background-color: antiquewhite;
+}
+.tab_content_headings {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.tab_content_headings > div :first-child {
+  font-weight: bold;
+}
+
+.tab_content_headings > div {
+  cursor: pointer;
+}
+.tab_content_headings > div:hover {
+  transform: scale(1.1);
+}
