@@ -50,6 +50,11 @@
   border: 1px solid #4a42ff;
   color: #4a42ff;
 }
+@media (min-width: 901px) {
+  .menu_icon {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
   .container {
     justify-content: space-between;
@@ -61,6 +66,10 @@
   .btn_group {
     display: none;
   }
+  .menu_icon {
+    display: block;
+    cursor: pointer;
+  }
   .menu_icon > div {
     height: 3px;
     width: 18px;
@@ -68,7 +77,4 @@
     background-color: white;
     border-radius: 999px;
   }
-}
-.menu_icon {
-  display: none;
 }
